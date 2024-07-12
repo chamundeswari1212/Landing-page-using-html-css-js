@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker's House</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1N2JhdGNoMS10YW5nLTAxYS5qcGc.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-attachment: fixed; /* Fixes the background image in place */
+            background-position: center; /* Centers the background image */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="https://www.crushpixel.com/big-static17/preview4/chef-hat-logo-2619063.jpg" alt="Baker's House Logo" class="logo">
+            <h1 class="site-title">Baker's House</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="#login">Login/Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <div class="landing-content">
+            <div class="welcome-line"><b>WELCOME</b></div>
+            <div class="to-line"><b>TO</b></div>
+            <div class="bakers-house-line">BAKER'S HOUSE <br><p>Available in</p><p>(Offline & Online)</p></div>
+        </div>
+        <button class="start-button" onclick="start()">EXPLORE..</button>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="page hidden">
+        <div class="content">
+            <h1 style="font-family: cursive;">Baker's House</h1>
+            <p style="font-family: cursive;">Welcome to Baker's House! Here you will find the best cakes in town.</p>
+        </div>
+        <div class="cake-images">
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://i.pinimg.com/originals/3b/6d/91/3b6d91088d82fdf36c774e39ec97e779.jpg" alt="Cake 1" class="square-image">
+                <div class="info">
+                    <div class="center">
+                        <p>Special Ingredients:</p>
+                        <ul>
+                            <li>chocolate</li>
+                            <li>sugar</li>
+                            <li>eggs</li>
+                            <li>vanilla</li>
+                            <li>650rs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://cakeconnection.in/wp-content/uploads/2021/07/CLASSIC-CHOCOLATE-CAKE.jpg" alt="Cake 1" class="square-image">
+                <div class="info">
+                    <div class="center">
+                        <p>Special Ingredients:</p>
+                        <ul>
+                            <li>flour</li>
+                            <li>sugar</li>
+                            <li>eggs</li>
+                            <li>chocolate</li>
+                            <li>700rs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zyHFf9AdQDjXXBhF8KGUeAHaE7&pid=Api&P=0&h=180" alt="Cake 2" class="square-image">
+                <div class="info">
+                    <p>Special Ingredients:</p>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Cocoa</li>
+                        <li>Milk</li>
+                        <li>Hazelnuts</li>
+                        <li>600rs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://www.fnp.com/images/pr/l/v20221205201844/red-velvet-fresh-cream-cake-half-kg_2.jpg" alt="Cake 2" class="square-image">
+                <div class="info">
+                    <p>Special Ingredients:</p>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Cocoa</li>
+                        <li>Milk</li>
+                        <li>Hazelnuts</li>
+                        <li>650rs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offers">
+            <div class="special-offer hidden">
+                <h2>Today's Special Offer!</h2>
+                <p>Get <strong>10% OFF</strong> on all items!</p>
+            </div><br>
+            <button id="launching-button">Launching Date</button>
+            <div id="launching-date" class="hidden">
+                <p style="font-family: cursive;">Launching on: <span id="date-placeholder"></span></p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Contact Number: 123-456-7890</p>
+            <p>Email: bakershouse@example.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

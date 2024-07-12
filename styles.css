@@ -1,0 +1,251 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: #8B4513;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.site-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+.landing-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.hidden {
+    display: none;
+    color: #8B4513;
+}
+
+#launching-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: brown; /* Set the background color to brown */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#launching-button:hover {
+    background-color: darkbrown; /* Optional: Darker brown on hover */
+}
+
+
+#landing-page {
+    background-image: url('bakery-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.cake-images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px ;
+}
+
+.cake-images img {
+    width: 200px;
+    height: auto;
+    margin: 40px;
+}
+
+.offers {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+    color: #8B4513;
+    font-size: xx-large;
+
+}
+
+.welcome-line {
+    font-size: 5em; /* Adjust the size as needed */
+    font-family: cursive; /* Font style */
+    color: #336699; /* Color for Welcome */
+    animation: animate 2s steps(20) forwards; /* Animation settings */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides overflow */
+    border-right: 2px solid transparent; /* Creates typing effect */
+    margin-bottom: 10px; /* Space between lines */
+}
+
+.to-line {
+    font-size: 2.5em; /* Adjust the size as needed */
+    font-family: 'Courier New', monospace; /* Font style */
+    color: brown; /* Color for 'to' */
+    animation: animate 2s steps(20) 1s forwards; /* Animation settings with delay */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides overflow */
+    border-right: 2px solid transparent; /* Creates typing effect */
+    margin-bottom: 10px; /* Space between lines */
+}
+
+.bakers-house-line {
+    font-size: 2.5em; /* Adjust the size as needed */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font style */
+    color: rgb(51, 4, 4); /* Color for Baker's House */
+    animation: animate 2s steps(20) 2s forwards; /* Animation settings with delay */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides overflow */
+    border-right: 2px solid transparent; /* Creates typing effect */
+}
+
+.start-button {
+    font-size: 1.5em; /* Adjust the size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: brown; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.start-button:hover {
+    background-color: #FF4500; /* Darker color on hover */
+}
+
+@keyframes animate {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.image-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-item:hover .info {
+    opacity: 1;
+}
+
+.image-item:hover {
+    transform: scale(1.1);
+}
+
+.offers {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+    color: #8B4513;
+    font-family: cursive;
+}
